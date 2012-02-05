@@ -409,6 +409,7 @@ function SOC() {
 		$("tr[valign*='top'] td:nth-child(5)", list).click(function() {
 			var prof = $(this).html();
 			showProfessors(prof);
+			return false; // clicking prof should not add course
 		});
 		
 		// instructor hover
